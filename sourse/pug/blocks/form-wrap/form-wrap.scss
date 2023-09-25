@@ -1,0 +1,98 @@
+.form-wrap {
+	&__input-wrap {
+		// @extend .form-group;
+		margin-bottom: rem(15);
+	}
+	&__input-title{
+		margin-bottom: rem(4);
+		span{
+			color: #B43F59;
+		}
+	}
+	&__input {
+		// @extend .form-control;
+		//  outline: 0 !important;
+		resize: none;
+	}
+	&__btn {
+		cursor: pointer;
+		margin-bottom: rem(15);
+	}
+	label {
+		width: 100%;
+		display: block;
+	}
+	&__policy{
+		margin-bottom: rem(30);
+		a{
+			color: #4385CC;
+		}
+	}
+	&__block{
+		padding: rem(18);
+		border-radius: 4px;
+		border: 1px solid #D6D6D6;
+		.btn{
+			margin-bottom: 0;
+		}
+		.h2{
+			margin-bottom: 0;
+		}
+		.row{
+			align-items: flex-end;
+		}
+	}
+}
+
+
+//
+@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(xs) {}
+@include media-breakpoint-between(md, xl) {}
+@include media-breakpoint-only(xl) {}
+@include media-breakpoint-down(xs) {}
+
+.form-check {
+}
+.form-check-input {
+}
+.form-check-label {
+}
+
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0;
+	/* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.select2-container--default .select2-selection--single {
+	@extend .form-select;
+	height: auto !important;
+	padding-left: rem(10);
+}
+
+.select2-container--default
+	.select2-selection--single
+	.select2-selection__rendered {
+	padding: 0;
+}
+
+.select2-container--default
+	.select2-selection--single
+	.select2-selection__arrow {
+	display: none;
+}
