@@ -29,7 +29,7 @@ mixin sForm()
 								button.btn.btn-secondary(type="button") Добавить участника
 							.col-md-auto.col-sm-6
 								button.btn.btn-primary(type="button") Оплатить
-							.col-sm.order-md-first
+							.col-lg.col-sm-6.order-md-first
 								button.btn.btn-outline-secondary(type="button") Сбросить заказ
 				.panel-block
 					h2 Добавить участника
@@ -54,9 +54,9 @@ mixin sForm()
 							+input("",'text',`Промокод `) 
 						+e.col.col-12
 							+policy
-						+e.col.col-xl-4.col-lg-6.order-lg-0.order-last.align-self-end
+						+e.col.col-xl-4.col-sm-6.order-lg-0.order-last.align-self-end
 							button.btn.btn-outline-secondary(type="button") Сбросить заказ
-						+e.col.col
+						+e.col.colplg
 							+e.block
 								.row
 									.col
@@ -64,7 +64,7 @@ mixin sForm()
 										.row
 											.col-auto.h2 10 000 ₽
 											.col-auto.small в т.ч. НДС 20%
-									.col-sm-auto.align-self-end
+									.col-md-auto.col-sm-4.align-self-end
 										+e.btn.btn.btn-primary(type="submit") Добавить
 						
 	// end sForm
